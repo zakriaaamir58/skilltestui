@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-container {
+    padding: 2rem;
+  }
+  
+  .tile {
+    cursor: pointer;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+ /* Overlay for Expanded View */
+.expanded-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .expanded-view .bg-white {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  
